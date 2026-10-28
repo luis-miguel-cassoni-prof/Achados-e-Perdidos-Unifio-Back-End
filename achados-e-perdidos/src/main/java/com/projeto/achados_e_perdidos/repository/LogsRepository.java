@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.projeto.achados_e_perdidos.model.Logs;
 
-public interface LogsRepository extends JpaRepository<Integer, Logs> {
+public interface LogsRepository extends JpaRepository<Logs, Integer> {
 
 }
