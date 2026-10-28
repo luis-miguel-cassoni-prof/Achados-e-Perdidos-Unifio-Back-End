@@ -1,5 +1,7 @@
 package com.projeto.achados_e_perdidos.model;
 
+import com.projeto.achados_e_perdidos.model.enums.NivelAcesso;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
