@@ -23,7 +23,7 @@ public class Usuario {
     @Column (nullable = false, length = 50)
     private String nomeUsuario;
 
-    @Column (nullable = false, length = 255)
+    @Column (nullable = false, unique = true, length = 255)
     private String email;
 
     @Column (nullable = false, length = 300)
@@ -34,6 +34,9 @@ public class Usuario {
 
     @Column (nullable = false, length= 30)
     private String telefone;
+
+    @Column (nullable = false)
+    private boolean bloqueado = false;
 
     @Enumerated (EnumType.STRING)
     private NivelAcesso nivelDeAcesso;
